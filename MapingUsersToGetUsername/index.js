@@ -19,3 +19,11 @@ const users=[
 
 ]
 
+const usersname=[]
+for(let i=0;i<users.length;i++){
+ const data=users[i].name
+usersname.push(data)
+console.log(usersname)
+
+   
+}
