@@ -9,7 +9,7 @@ const users=[
     {
         id:2,
         name:"John",
-        isActive:false
+        isActive:true
     },
     {
         id:3,
@@ -40,4 +40,9 @@ const users=[
 
 const names=users.map((user=>user.name))
 console.log(names)
+
+//if it is active get username
+
+const getActiveUsername=users.filter((user)=>user.isActive).map((user)=>user.name)
+console.log(getActiveUsername)
 
