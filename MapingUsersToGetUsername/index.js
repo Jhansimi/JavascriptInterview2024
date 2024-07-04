@@ -28,11 +28,16 @@ const users=[
    
 // }
 
-//Better way//
+//second way
 
-const usersdata=[]
-users.forEach((user)=>{
-    usersdata.push(user.name)
-})
-console.log(usersdata)
+// const usersdata=[]
+// users.forEach((user)=>{
+//     usersdata.push(user.name)
+// })
+// console.log(usersdata)
+
+//Best way
+
+const names=users.map((user=>user.name))
+console.log(names)
 
